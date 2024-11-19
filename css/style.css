@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1190px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Header start */
+
+/* Site start */
+
+.header {
+    background-color: #EEEFF1;
+}
+
+.site__wrapper {
+    display: flex;
+    padding-top: 79px;
+    margin-bottom: 162px;
+    text-align: center;
+    gap: 398px;
+}
+
+.site_logo {
+    text-decoration: none;
+    color: #34547A;
+}
+
+.site__list {
+    display: flex;
+    gap: 42px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.site__item {
+    font-size: 16px;
+    color: #34547A;
+    line-height: 26.25px;
+    letter-spacing: 10%;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Site end */
+
+/* hero start */
+.hero {
+    background-color: #EEEFF1;
+}
+
+.hero__wrapper {
+    display: flex;
+    padding-bottom: 146px;
+    margin-bottom: 119px;
+    gap: 131px;
+    margin-left: 85px;
+}
+
+.hero__tittle {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 78.75px;
+    color: #000000;
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #000000;
+}
+
+.hero__link {
+    text-decoration: none;
+    padding: 25px 41px;
+    background-color: #34547A;
+    font-size: 16px;
+    line-height: 26.25px;
+    letter-spacing: 10%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* hero end */
+/* Header end */
+
+/* Main start */
+/* about start */
+
+.about__info {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about__tittle {
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000000;
+}
+
+.about__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+}
+
+/* about end */
+/* Card start */
+
+.card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 150px;
+    background-color: #34547A;
+}
+
+.card__wrapper {
+    display: flex;
+    gap: 49px;
+}
+
+/* Card end */
+
+.stats__wrapper {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 101px;
+  
+}
+
+.stats__tittle {
+    margin: 0;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.progress{
+    width: 445px;
+    height: 4px;
+    background-color: #C4C4C4;
+    position: relative;
+} 
+
+.prog__tittle {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+    padding-bottom: 20px;
+    padding-top: 29.76px;
+}
+
+.progress__span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #34547A;
+    width: 349.36px;
+}
+
+.stats_photo {
+    width: 555px;
+}
+
+/* Stats end */
+
+/* Description start */
+
+.desc {
+    background-color: #EEEFF1;
+    padding-bottom: 100px;
+    margin-bottom: 128px;
+}
+
+.desc__tittle {
+    padding-top: 100px;
+    margin: 0;
+    font-size: 32px;
+    padding-bottom: 50px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #000000;
+}
+
+.desc__text {
+    margin: 0;
+    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 26.25px;
+    text-align: center;
+    color: #000000;
+}
+
+.desc__photo {
+    width: 1110px;
+    height: 600px;
+    margin-left: 19px;
+
+}
+
+/* Description end */
+
+/* Projects start */
+
+.projects {
+    width: 1920px;
+    height: 960px;
+    background-image: url("https://i.redd.it/6ikf6l17e1221.jpg");
+    background-size: auto;
+}
+
+.microsoft__logo{
+    margin-top: 1032px;
+
+} 
+/* Projects end */
+
+
+/* form start */
+
+.form {
+    width: 1920px;
+    height: 762px;
+    background-color: #EEEFF1;
+    margin-top: 292px;
+}
+
+.form__tittle {
+    padding-top: 100px;
+    margin: 0;
+    font-size: 32px;
+    padding-bottom: 50px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #000000;
+}
+
+.form__text {
+    margin: 0;
+    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 26.25px;
+    text-align: center;
+    color: #000000;
+}
+
+.form__group {
+    padding-left: 285px;
+}
+
+
+.field__name {
+    width: 255px;
+    height: 50px;
+    padding-left: 20px;
+    margin-right: 30px;
+    background-color: #FFFFFF;
+    border: 0;
+    outline: none;
+}
+.field__name::placeholder {
+    font-size: 14px;
+    line-height: 22.97px;
+    color: #5F5D5D;
+    padding-top: 17px;
+    padding-bottom: 18px;
+}
+
+.field__email {
+    width: 255px;
+    height: 50px;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    border: 0;
+    outline: none;
+}
+.field__email::placeholder {
+    font-size: 14px;
+    line-height: 22.97px;
+    color: #5F5D5D;
+    padding-top: 17px;
+    padding-bottom: 18px;
+}
+
+.field__message {
+    width: 540px;
+    height: 175px;
+    background-color: #FFFFFF;
+    resize: none;
+    margin-top: 20px;
+    padding-top: 17px;
+    padding-bottom: 143px;
+    padding-left: 20px;
+    border: 0;
+    outline: none;
+    overflow-y: hidden;
+}
+
+.field__button {
+    width: 190px;
+    height: 55px;
+    background-color: #34547A;
+    margin-top: 50px;
+    margin-left: 174px;
+    font-size: 14px;
+    line-height: 22.97px;  
+    letter-spacing: 15%;  
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* form end */
+/* Main end */
+
+/* Footer start */
+
+.footer {
+    background-color: #34547A;
+    height: 150px;
+}
+
+.footer__wrapper {
+    display: flex;
+    gap: 757px;
+    padding-top: 50px;
+}
+
+.footer__tittle {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 21px;
+    line-height: 24.61px;
+    color: #FFFFFF;
+}
+
+
+.footer__text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 21.33px;
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    width: 175px;
+    height: 40px;
+}
+
+.footer__logo {
+    text-decoration: none;
+}
+
+/* Footer end */
