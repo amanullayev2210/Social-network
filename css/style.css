@@ -50,7 +50,7 @@ body {
     font-size: 16px;
     color: #34547A;
     line-height: 26.25px;
-    letter-spacing: 10%;
+    letter-spacing: 1.6px;
 }
 
 .nav__link {
@@ -95,7 +95,7 @@ body {
     background-color: #34547A;
     font-size: 16px;
     line-height: 26.25px;
-    letter-spacing: 10%;
+    letter-spacing: 1.6px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -147,11 +147,11 @@ body {
     display: flex;
     gap: 150px;
     margin-bottom: 101px;
-  
 }
 
 .stats__tittle {
     margin: 0;
+    padding-top: 102px;
     font-size: 32px;
     line-height: 37.5px;
     color: #000000;
@@ -220,7 +220,12 @@ body {
     width: 1110px;
     height: 600px;
     margin-left: 19px;
+}
 
+.desc__photob {
+    position: relative;
+    bottom: 351px;
+    left: 522px;
 }
 
 /* Description end */
@@ -232,6 +237,7 @@ body {
     height: 960px;
     background-image: url("https://i.redd.it/6ikf6l17e1221.jpg");
     background-size: auto;
+    margin: 0 auto;
 }
 
 .microsoft__logo{
@@ -244,8 +250,6 @@ body {
 /* form start */
 
 .form {
-    width: 1920px;
-    height: 762px;
     background-color: #EEEFF1;
     margin-top: 292px;
 }
@@ -327,9 +331,10 @@ body {
     background-color: #34547A;
     margin-top: 50px;
     margin-left: 174px;
+    margin-bottom: 100px;
     font-size: 14px;
     line-height: 22.97px;  
-    letter-spacing: 15%;  
+    letter-spacing: 2.1px;  
     text-align: center;
     color: #FFFFFF;
 }
