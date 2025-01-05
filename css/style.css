@@ -1,16 +1,18 @@
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     overflow-x: hidden;
 }
 
 .container {
-    width: 1190px;
+    max-width: 1190px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
@@ -23,11 +25,14 @@ body {
 
 .header {
     background-color: #EEEFF1;
+    position: relative;
 }
 
 .site__wrapper {
+    width: 100%;
     display: flex;
     padding-top: 79px;
+    justify-content: center;
     margin-bottom: 162px;
     text-align: center;
     gap: 398px;
@@ -50,13 +55,30 @@ body {
     font-size: 16px;
     color: #34547A;
     line-height: 26.25px;
-    letter-spacing: 1.6px;
+    letter-spacing: 1px;
+
 }
 
 .nav__link {
     text-decoration: none;
     color: #000000;
+
+    &:hover {
+        color: #66BB6A;
+    }
 }
+
+.js-button {
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+.open .site__nav {
+    display: block;
+    visibility: visible;
+    z-index: 5;
+  }
 
 /* Site end */
 
@@ -66,14 +88,18 @@ body {
 }
 
 .hero__wrapper {
+    margin: 0 auto;
     display: flex;
+    max-width: 1000px;
+    justify-content: center;
     padding-bottom: 146px;
     margin-bottom: 119px;
     gap: 131px;
-    margin-left: 85px;
 }
 
 .hero__tittle {
+    max-width: 541px;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 60px;
     font-size: 48px;
@@ -84,6 +110,8 @@ body {
 .hero__text {
     margin-top: 0;
     margin-bottom: 60px;
+    max-width: 540px;
+    width: 100%;
     font-size: 16px;
     line-height: 26.25px;
     color: #000000;
@@ -98,6 +126,10 @@ body {
     letter-spacing: 1.6px;
     text-align: center;
     color: #FFFFFF;
+
+    &:hover {
+        color: #66BB6A;
+    }
 }
 
 /* hero end */
@@ -120,7 +152,9 @@ body {
 }
 
 .about__text {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
     font-size: 16px;
     line-height: 26.25px;
     color: #727272;
@@ -145,8 +179,10 @@ body {
 /* Stats start */
 
 .stats__wrapper {
+    max-width: 1150px;
+    width: 100%;
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
     margin-bottom: 101px;
 }
 
@@ -160,7 +196,8 @@ body {
 }
 
 .progress{
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
     height: 4px;
     background-color: #C4C4C4;
     position: relative;
@@ -185,7 +222,8 @@ body {
 }
 
 .stats_photo {
-    width: 555px;
+    max-width: 555px;
+    width: 100%;
 }
 
 /* Stats end */
@@ -209,7 +247,9 @@ body {
 }
 
 .desc__text {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
     padding-bottom: 57px;
     font-size: 16px;
     line-height: 26.25px;
@@ -218,15 +258,9 @@ body {
 }
 
 .desc__photo {
-    width: 1110px;
-    height: 600px;
+    width: 100%;
+    height: auto;
     margin-left: 19px;
-}
-
-.desc__photob {
-    position: relative;
-    bottom: 351px;
-    left: 522px;
 }
 
 /* Description end */
@@ -234,15 +268,16 @@ body {
 /* Projects start */
 
 .projects {
-    width: 1920px;
+    width: 100%;
     height: 960px;
-    background-image: url("https://i.redd.it/6ikf6l17e1221.jpg");
-    background-size: auto;
-    margin: 0 auto;
+    background-image: url("/imgs/projects.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .microsoft__logo{
-    margin-top: 1032px;
+    padding-top: 1020px;
+    width: 100%;
 
 } 
 /* Projects end */
@@ -266,7 +301,9 @@ body {
 }
 
 .form__text {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
     padding-bottom: 57px;
     font-size: 16px;
     line-height: 26.25px;
@@ -275,12 +312,13 @@ body {
 }
 
 .form__group {
-    padding-left: 285px;
+    text-align: center;
 }
 
 
 .field__name {
-    width: 255px;
+    max-width: 255px;
+    width: 100%;
     height: 50px;
     padding-left: 20px;
     margin-right: 30px;
@@ -297,7 +335,8 @@ body {
 }
 
 .field__email {
-    width: 255px;
+    max-width: 255px;
+    width: 100%;
     height: 50px;
     background-color: #FFFFFF;
     padding-left: 20px;
@@ -313,32 +352,38 @@ body {
 }
 
 .field__message {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     height: 175px;
     background-color: #FFFFFF;
     resize: none;
     margin-top: 20px;
-    padding-top: 17px;
-    padding-bottom: 143px;
-    padding-left: 20px;
+    padding: 17px 0px 143px 20px;
     border: 0;
     outline: none;
     overflow-y: hidden;
 }
 
 .field__button {
-    width: 190px;
+    max-width: 190px;
+    width: 100%;
     height: 55px;
     background-color: #34547A;
     margin-top: 50px;
-    margin-left: 174px;
     margin-bottom: 100px;
     font-size: 14px;
     line-height: 22.97px;  
     letter-spacing: 2.1px;  
     text-align: center;
     color: #FFFFFF;
+
+    &:hover {
+        cursor: pointer;
+        color: #66BB6A;
+    }
 }
+
+
 
 /* form end */
 /* Main end */
@@ -352,7 +397,7 @@ body {
 
 .footer__wrapper {
     display: flex;
-    gap: 757px;
+    justify-content: space-between;
     padding-top: 50px;
 }
 
@@ -373,7 +418,8 @@ body {
 }
 
 .footer__logo {
-    width: 175px;
+    max-width: 175px;
+    width: 100%;
     height: 40px;
 }
 
@@ -382,3 +428,192 @@ body {
 }
 
 /* Footer end */
+
+/* responsive start */
+
+
+@media only screen and (max-width: 1120px) {
+    /* header start */
+    .site__wrapper {
+        gap: unset;
+        justify-content: space-between;
+    }
+    /* header end */
+    /* card start */
+    .card__wrapper {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    /* card end */
+}
+
+@media only screen and (max-width: 992px) {
+    /* hero start */
+    .hero__tittle {
+        margin-bottom: 30px;
+        font-size: 38px;
+        line-height: 48px;
+    }
+    /* hero end */
+}
+
+@media only screen and (max-width: 968px) {
+    /* hero start */
+    .hero__wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 70px;
+    }
+    /* hero end */
+    /* card start */
+    .card {
+        margin: 0;
+        padding-block: 70px;
+    }
+
+    .card__wrapper {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    /* card end */
+    /* stats start */
+    .stats__wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    /* stats end */
+    /* description start */
+    .desc__photo {
+        width: 100%;
+        margin-left: 0;
+    }
+    /* decription end */
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* header start */
+    .site__wrapper {
+        padding-top: 50px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+    .js-button {
+        display: block;
+        font-size: 24px;
+
+      }
+
+    .site__nav {
+        position: absolute;
+        top: 12%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .site__list {
+        flex-direction: column;
+        background-color: #EEEFF1;
+        padding-bottom: 40px;
+      }
+
+    .site__item {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32.2px;
+        color: #9698A6;
+      }
+
+      .nav__link {
+
+        &:hover {
+            color: #66BB6A;
+        }
+      }
+    /* header end */  
+    /* card start */
+    .card {
+        margin-bottom: 0;
+        padding-block: 70px;
+    }
+
+    .card__wrapper {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    /* hero start */
+    .hero__wrapper {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    /* hero end */
+}
+
+@media only screen and (max-width: 638px) {
+    /* card start */
+    .card__wrapper {
+        gap: 40px;
+    }
+    /* card end */
+}
+
+@media only screen and (max-width: 584px) {
+    /* form start */
+    .field__name {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .field__email {
+        max-width: 100%;
+    }
+    /* form end */
+}
+
+@media only screen and (max-width: 514px) {
+    /* form start */
+    .form {
+        margin-top: 200px;
+    }
+    /* form end */
+}
+
+@media only screen and (max-width: 478px) {
+    /* header start */
+    .site__wrapper {
+        margin-bottom: 90px;
+    }
+    /* header end */
+    /* hero start */
+    .hero__wrapper {
+        text-align: center;
+    }
+    /* hero end */
+}
+
+@media only screen and (max-width: 375px) {
+    /* hero start*/
+    .hero__wrapper {
+
+        img {
+            width: 100%;
+        }
+    }
+    /* hero end */
+}
+
+/* responsive end */
