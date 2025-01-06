@@ -260,7 +260,6 @@ body {
 .desc__photo {
     width: 100%;
     height: auto;
-    margin-left: 19px;
 }
 
 /* Description end */
@@ -522,14 +521,15 @@ body {
     
     .site__list {
         flex-direction: column;
+        gap: 30px;
         background-color: #EEEFF1;
         padding-bottom: 40px;
       }
 
     .site__item {
         font-weight: 500;
-        font-size: 28px;
-        line-height: 32.2px;
+        font-size: 18px;
+        line-height: 26.2px;
         color: #9698A6;
       }
 
@@ -590,6 +590,17 @@ body {
         margin-top: 200px;
     }
     /* form end */
+    /* footer start */
+    .footer__tittle {
+        font-size: 22px;
+        line-height: 36px;
+        padding-bottom: 10px;
+    }
+    .footer__text {
+        font-size: 11px;
+        line-height: 24px;
+    }
+    /* footer end */
 }
 
 @media only screen and (max-width: 478px) {
@@ -614,6 +625,12 @@ body {
         }
     }
     /* hero end */
+    /* foooter start */
+    .footer__text {
+        font-size: 10px;
+        line-height: 22px;
+    }
+    /* footer end */
 }
 
 /* responsive end */
