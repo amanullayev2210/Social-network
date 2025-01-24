@@ -1,11 +1,25 @@
+const menu = document.querySelector(".menu");
+const closes = document.querySelector(".close");
+
+let data = true;
+
 document.querySelector(".js-button").addEventListener("click", (evt) => {
-    evt.preventDefault();
-  
-    document
-      .querySelector(".js-button")
-      .closest(".header")
-      .classList.toggle("open");
-  });
+  evt.preventDefault();
+  document
+    .querySelector(".js-button")
+    .closest(".header")
+    .classList.toggle("open");
+
+  if (data) {
+    menu.style.display = "none";
+    closes.style.display = "block";
+    data = false;
+  } else {
+    menu.style.display = "block";
+    closes.style.display = "none";
+    data = true;
+  }
+});
 
   document.querySelectorAll('.js__link').forEach(link => {
     link.addEventListener('click', function (e) {
