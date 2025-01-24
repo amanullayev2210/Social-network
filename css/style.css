@@ -74,6 +74,10 @@ body {
     display: none;
 }
 
+.close {
+    display: none;
+}
+
 .open .site__nav {
     display: block;
     visibility: visible;
